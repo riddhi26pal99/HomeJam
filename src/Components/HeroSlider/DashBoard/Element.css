@@ -1,0 +1,99 @@
+.element {
+    width: 208px;
+    height: 208px;
+    border-radius: 50%;
+    border: 1px solid #ffffff33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 80px; 
+}
+
+/* Selected Element  */
+
+.Selected__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 208px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff33;
+    position: relative;
+}
+
+.Selected__element::after {
+        content: "";
+        width: 209px;
+        height: 209px;
+        border-right: 1px solid #DD4CAC;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+}
+
+.icon2 {
+    width: 24px;
+    height: 26px;
+}
+
+.element > h3,
+.Selected__element > h3 {
+    font-family: "Libre Baskerville";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.element p,
+.Selected__element {
+   font-size: 16px;
+   line-height: 32px;
+   opacity: 0.6;
+   font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.element:hover,
+.Selected__element:hover {
+    cursor: pointer;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    
+    .Selected__element {
+        margin-right: 20px;
+        border-radius: 50%;
+        border: 1px solid #ffffff33;
+        background-image: none;
+        width: 144px;
+        height: 144px;
+        padding: 80px;
+        position: relative;
+    }
+
+    .Selected__element::after{
+        content: "";
+        width: 160px;
+        height: 160px;
+        right: 0;
+    }
+
+    .element{
+        width: 144px;
+        height: 144px;
+        margin-right: 20px;
+    }
+
+    
+}

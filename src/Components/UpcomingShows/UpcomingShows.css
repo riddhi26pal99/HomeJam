@@ -1,0 +1,64 @@
+.cards__container {
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    overflow-x: auto;
+    padding: 0px 150px;
+}
+
+.cards__container::-webkit-scrollbar {
+    width: 0;
+}
+
+.card__header {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+.card__header > h1 {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+
+.card__header p {
+    font-family: Nunito, 'Open Sans';
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E5C558;
+}
+
+/* Header unerline */
+
+.underline {
+    width: 48px;
+    height: 3px;
+    margin-top: 5px;
+    background: #0259EB;
+    border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+    .card__header{
+        padding: 0px;
+        padding-left: 20px;
+    }
+
+    .cards__container{
+        padding: 0px;
+        padding-left: 20px;
+    }
+}

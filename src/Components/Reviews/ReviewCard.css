@@ -1,0 +1,114 @@
+/* @font-face {
+  font-family: Quattrocento;
+  src: url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+} */
+
+.reviewCard__wrapper {
+    position: relative;
+    width: 375px;
+    height: 255px;  
+    display: flex;
+    justify-content: center;
+}
+
+
+.reviewCard__style {
+    width: 360px;
+    height: 248px;
+    background: #0A0B1A;
+    border: 2px solid #E5AF56;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} 
+
+/* details */
+
+.user__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user__info > img {
+    width: 48px;
+    height: 48px;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user__detail {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user__detail > h4 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.location > p {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E5C558;
+    padding: 0px 10px;
+}
+
+.reviewCard__style > p {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.reviewCard__bg {
+    width: 360px;
+    height: 248px;
+    background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+    border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+    
+    .reviewCard__wrapper {
+        margin-right: 20px;
+        padding-left: 10px;
+        height: 245px; 
+    }
+
+    .reviewCard__style{
+        padding: 20px 15px;
+        width: 328px;
+        height: 232px;
+    }
+
+    .reviewCard__style > p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .reviewCard__bg {
+        width: 332px;
+        height: 240px;
+    }
+
+}
